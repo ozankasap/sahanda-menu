@@ -6,7 +6,7 @@
   const makeId = title => `${title.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9ğüşıöç]+/g, '-').replace(/(^-|-$)/g, '')}-${Date.now().toString().slice(-5)}`;
   const save = () => { localStorage.setItem(key, JSON.stringify(menu)); };
   const bindGeneral = () => ['brand','year','updatedAt','taxNote'].forEach(field => { $(`#${field}`).value = menu[field] || ''; $(`#${field}`).oninput = event => { menu[field] = event.target.value; save(); }; });
-  const draw = () => {
+  const draw = focusCategoryId => {
     categories.innerHTML = '';
     menu.categories.forEach((category, ci) => {
       const card = document.createElement('section'); card.className = 'category-card';
@@ -17,9 +17,10 @@
       card.querySelector('.category-title').oninput = event => { category.title = event.target.value; save(); };
       card.querySelector('.move-up').onclick = () => { if (ci > 0) { [menu.categories[ci - 1], menu.categories[ci]] = [menu.categories[ci], menu.categories[ci - 1]]; save(); draw(); } };
       card.querySelector('.move-down').onclick = () => { if (ci < menu.categories.length - 1) { [menu.categories[ci], menu.categories[ci + 1]] = [menu.categories[ci + 1], menu.categories[ci]]; save(); draw(); } };
-      card.querySelector('.add-item').onclick = () => { category.items.push({name:'Yeni ürün',description:'',price:0}); save(); draw(); };
+      card.querySelector('.add-item').onclick = () => { category.items.push({name:'Yeni ürün',description:'',price:0}); save(); draw(category.id); };
       card.querySelector('.remove-category').onclick = () => { if (confirm(`“${category.title}” kategorisi silinsin mi?`)) { menu.categories.splice(ci, 1); save(); draw(); } };
       categories.append(card);
+      if (focusCategoryId === category.id) requestAnimationFrame(() => card.scrollIntoView({behavior: 'smooth', block: 'start'}));
     });
   };
   const addItemRow = (list, item, ci, ii) => {
@@ -33,7 +34,7 @@
     row.querySelector('.remove-item').onclick = () => { if (confirm(`“${item.name}” ürünü silinsin mi?`)) { menu.categories[ci].items.splice(ii, 1); save(); draw(); } };
     list.append(row);
   };
-  $('#add-category').onclick = () => { const title = prompt('Yeni kategori adı:'); if (title?.trim()) { menu.categories.push({id:makeId(title),title:title.trim(),icon:'☕',items:[]}); save(); draw(); } };
+  $('#add-category').onclick = () => { const title = 'Yeni kategori'; const id = makeId(title); menu.categories.push({id,title,icon:'☕',items:[]}); save(); draw(id); };
   $('#download').onclick = () => { const file = new Blob([`window.DEFAULT_MENU = ${JSON.stringify(menu, null, 2)};\n`], {type:'text/javascript'}); const link = document.createElement('a'); link.href = URL.createObjectURL(file); link.download = 'menu-data.js'; link.click(); URL.revokeObjectURL(link.href); };
   $('#preview').onclick = () => window.open('index.html', '_blank');
   $('#reset').onclick = () => { if (confirm('Bu bilgisayardaki tüm yerel düzenlemeler silinsin mi?')) { menu = JSON.parse(JSON.stringify(window.DEFAULT_MENU)); save(); bindGeneral(); draw(); } };

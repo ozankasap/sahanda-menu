@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f8f2e6"/><stop offset="1" stop-color="#eee3cf"/></linearGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#d9d2a6"/><stop offset="1" stop-color="#8e9562"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 .7 0 1 0 0 .65 0 0 1 0 .48 0 0 0 .12 0"/></filter>
+  </defs>
+  <rect width="700" height="1200" fill="url(#paper)"/><rect width="700" height="1200" filter="url(#grain)" opacity=".25"/>
+  <g fill="url(#leaf)" stroke="#777b4d" stroke-width="1.4" opacity=".9">
+    <path d="M0 15C64 7 89 33 103 79 50 82 17 56 0 15z"/><path d="M14 83C65 58 100 71 120 111 71 131 35 119 14 83z"/><path d="M0 154c57-26 92-11 113 30-47 23-83 10-113-30z"/><path d="M15 227c55-30 91-16 112 23-45 29-80 18-112-23z"/>
+    <path d="M700 15c-64-8-89 18-103 64 53 3 86-23 103-64z"/><path d="M686 83c-51-25-86-12-106 28 49 20 85 8 106-28z"/><path d="M700 154c-57-26-92-11-113 30 47 23 83 10 113-30z"/><path d="M685 227c-55-30-91-16-112 23 45 29 80 18 112-23z"/>
+    <path d="M0 1008c64-8 89 18 103 64-53 3-86-23-103-64z"/><path d="M14 1080c51-25 86-12 106 28-49 20-85 8-106-28z"/><path d="M0 1154c57-26 92-11 113 30-47 23-83 10-113-30z"/>
+    <path d="M700 1008c-64-8-89 18-103 64 53 3 86-23 103-64z"/><path d="M686 1080c-51-25-86-12-106 28 49 20 85 8 106-28z"/><path d="M700 1154c-57-26-92-11-113 30 47 23 83 10 113-30z"/>
+  </g>
+  <g fill="none" stroke="#727b52" stroke-width="4" opacity=".7"><path d="M0 0c92 92 109 150 116 255"/><path d="M700 0c-92 92-109 150-116 255"/><path d="M0 1200c92-92 109-150 116-255"/><path d="M700 1200c-92-92-109-150-116-255"/></g>
+</svg>

@@ -1,34 +1,978 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shanda Kahvaltı 2012 | Menü</title>
-<meta name="description" content="Shanda Kahvaltı 2012 dijital menü">
-<style>
-*{box-sizing:border-box} body{margin:0;background:#f5f1e8;color:#183c2b;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.wrap{max-width:760px;margin:auto;padding:18px 14px 50px}
-header{text-align:center;padding:28px 12px 22px;background:#183c2b;color:#fff;border-radius:0 0 24px 24px;box-shadow:0 8px 25px #0002}
-.logo{font-family:Georgia,serif;font-weight:800;font-size:clamp(30px,8vw,52px);letter-spacing:-1px}
-.year{font-size:25px;font-weight:800;margin-top:2px}
-.sub{opacity:.88;margin-top:7px;font-size:14px}
-nav{position:sticky;top:0;z-index:5;background:#f5f1e8dd;backdrop-filter:blur(8px);padding:12px 0;overflow:auto;white-space:nowrap}
-nav a{display:inline-block;background:#fff;border:1px solid #d8d0bf;color:#183c2b;text-decoration:none;padding:8px 12px;border-radius:999px;margin-right:6px;font-size:13px;font-weight:700}
-section{background:#fff;border-radius:18px;margin:14px 0;padding:16px;box-shadow:0 3px 14px #0000000d}
-h2{margin:0 0 10px;font-family:Georgia,serif;font-size:23px;border-bottom:2px solid #e8dfcf;padding-bottom:9px}
-h2 span{margin-right:8px} .item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 0;border-bottom:1px dashed #d8d0bf;align-items:start}
-.item:last-child{border-bottom:0} .name{font-weight:750;color:#222;font-size:15px} .price{font-weight:800;color:#183c2b;white-space:nowrap;font-size:15px}
-.desc{font-size:12px;color:#666;line-height:1.45;margin-top:3px}
-footer{text-align:center;color:#777;font-size:12px;padding:20px 8px}
-@media(max-width:480px){.wrap{padding:0 10px 35px} section{padding:13px;border-radius:15px} .item{gap:8px} .name,.price{font-size:14px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAHANDA KAHVALTI 2012 | Menü</title>
+  <meta name="description" content="SAHANDA KAHVALTI 2012 dijital menü">
+  <style>:root{--cream:#f6efe4;--paper:#fffdfa;--green:#153f2d;--red:#bd1113;--line:#e8dfd1;--ink:#252527}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,sans-serif}.menu-page{background:var(--cream) url('botanical-frame.svg') center top/100% auto repeat-y}.menu-shell{max-width:650px;margin:auto;min-height:100vh;padding:0 14px 28px;background:#f6efe4e8}.menu-header{position:relative;overflow:hidden;margin:0 -14px;padding:30px 22px 26px;text-align:center;color:#fff;background:var(--green) url('botanical-frame.svg') center 19%/cover no-repeat;border-radius:0 0 29px 29px;box-shadow:0 7px 18px #17261933}.menu-header:after{content:'';position:absolute;inset:0;background:#123d2b80;z-index:0}.menu-header h1,.header-line{position:relative;z-index:1}.menu-header h1{margin:0;font:700 clamp(29px,7vw,46px)/1 Georgia,serif;letter-spacing:.2px;text-shadow:0 2px 3px #0008}.header-line{display:flex;gap:15px;justify-content:center;align-items:center;margin-top:10px;color:#f3e5c5;font:700 22px Georgia,serif;letter-spacing:3px}.header-line i{width:75px;height:1px;background:#f3e5c5}.category-nav{position:sticky;top:0;z-index:3;display:flex;gap:7px;overflow:auto;padding:13px 0;background:#f6efe4eF;backdrop-filter:blur(8px)}.category-nav a{display:flex;flex:0 0 112px;height:55px;flex-direction:column;gap:3px;align-items:center;justify-content:center;text-decoration:none;text-align:center;color:#252527;background:#fffdf9;border-radius:13px;border:1px solid #eee3d4;font-weight:700;font-size:11px;box-shadow:0 3px 8px #593b1612}.category-nav a:first-child{background:var(--red);color:#fff}.menu-category{overflow:hidden;margin:14px 0;border-radius:16px;background:#fffdfa;box-shadow:0 5px 16px #5a421916}.category-heading{position:relative;min-height:51px;display:flex;align-items:center;padding:11px 17px;color:#fff;background:var(--red) url('botanical-frame.svg') right center/auto 220% no-repeat}.menu-category:nth-of-type(even) .category-heading{background-color:var(--green);background-position:left center}.category-heading:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#a40f12e6,#bd1113a8);z-index:0}.menu-category:nth-of-type(even) .category-heading:after{background:linear-gradient(90deg,#153f2de8,#153f2da1)}.category-heading h2{position:relative;z-index:1;margin:0;font:700 23px Georgia,serif;text-shadow:0 1px 2px #0008}.leaf{display:none}.items{padding:0 16px}.menu-item{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;padding:11px 0;border-bottom:1px solid var(--line)}.menu-item:last-child{border:0}.menu-item h3{margin:0;font-size:15px;line-height:1.18}.menu-item p{margin:3px 0 0;color:#62626a;font-size:11px;line-height:1.35}.menu-item strong{margin-top:1px;white-space:nowrap;padding:7px 12px;border-radius:999px;background:var(--red);color:#fff;font-size:13px}footer{display:grid;grid-template-columns:1fr 1.55fr;position:relative;margin-top:15px;overflow:hidden;text-align:center;border-radius:15px;background:#fffdfa;box-shadow:0 4px 14px #5a421916}footer p{margin:0;padding:14px 9px;color:#3e3b39;font-size:11px;line-height:1.35}footer p+p{border-left:1px solid #c8bcaa}footer em{grid-column:1/-1;padding:8px;color:#7d8a60;font:italic 19px Georgia,serif;border-top:1px solid #e8dfd1}@media(max-width:480px){.menu-shell{padding:0 10px 25px}.menu-header{margin:0 -10px;padding:27px 12px 23px}.menu-header h1{font-size:30px}.category-nav{margin:0 -2px}.category-nav a{flex-basis:100px;height:52px}.menu-category{margin:12px 0}.category-heading h2{font-size:21px}.items{padding:0 14px}.menu-item{gap:8px;padding:10px 0}.menu-item h3{font-size:14px}.menu-item strong{font-size:12px;padding:7px 10px}footer{grid-template-columns:1fr}footer p+p{border-left:0;border-top:1px solid #c8bcaa}}
+
+:root{--cream:#f6efe2;--green:#183d2d;--red:#b5453e;--line:#ddceb7}*{box-sizing:border-box}body{margin:0;background:var(--cream);font-family:Arial,sans-serif;color:#292521}.admin-shell{max-width:920px;margin:auto;padding:26px 16px 56px}header a{color:var(--green);font-weight:bold;text-decoration:none}h1,h2,h3{font-family:Georgia,serif;color:var(--green)}h1{margin:13px 0 5px;font-size:36px}header p{margin-top:0;color:#655e55}.notice{background:#fff7e5;border-left:5px solid #c58331;padding:13px 15px;border-radius:8px;font-size:14px;line-height:1.5;margin:22px 0}.card,.category-card{background:#fffdf8;border:1px solid #ebdfcc;border-radius:14px;padding:17px;margin:16px 0;box-shadow:0 4px 12px #4f3e1b0c}.settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.settings h2{grid-column:1/-1;margin:0;font-size:22px}label{display:block;font-size:12px;font-weight:bold;color:#4a443c}input{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;margin-top:5px;font:inherit;background:#fff}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{border:1px solid #cfc0a8;border-radius:8px;background:#fffaf1;color:var(--green);font-weight:bold;padding:10px 13px;cursor:pointer}.primary{background:var(--green);color:#fff;border-color:var(--green)}.danger,.remove-item,.remove-category{color:#9b302b}.category-top{display:flex;gap:10px;align-items:flex-end}.category-top label{flex:1}.category-top .icon{max-width:72px}.category-actions{display:flex;gap:7px;margin:12px 0}.item-edit{display:flex;gap:12px;border-top:1px dashed var(--line);padding:12px 0}.fields{display:grid;grid-template-columns:2fr 100px;gap:9px;flex:1}.wide{grid-column:1/-1}.remove-item{align-self:center;border:0;background:none;padding:5px}.add-item{margin-top:4px}@media(max-width:600px){.settings{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.item-edit{gap:4px}.category-top{align-items:flex-end}}
+
+body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{display:none}</style>
 </head>
-<body>
-<div class="wrap">
-<header><div class="logo">SHANDA KAHVALTI</div><div class="year">2012</div><div class="sub">Güncel Dijital Menü</div></header>
-<nav><a href="#kahvalti">🍳 Kahvaltı</a><a href="#kahvaltiliklar">🥗 Kahvaltılıklar</a><a href="#gozleme">🥞 Gözleme</a><a href="#borek">🥐 Börek &amp; Pişi</a><a href="#menemen">🍅 Menemen</a><a href="#yumurta">🥚 Yumurta</a><a href="#omlet">🧀 Omlet</a><a href="#soguk">🥤 Soğuk İçecekler</a><a href="#mini_sicak">☕ Sıcak İçecekler</a></nav>
-<section id="kahvalti"><h2><span>🍳</span>Kahvaltı</h2><div class="item"><div><div class="name">Kahvaltı Tabağı</div><div class="desc">Beyaz peynir, taze kaşar, tel peynir, zeytin, salam, sosis (2 adet), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 2 adet çay</div></div><div class="price">500,00 ₺</div></div><div class="item"><div><div class="name">2 Kişilik Kahvaltı</div><div class="desc">Beyaz peynir, taze kaşar, tel peynir, örgü peynir, ev yapımı tepsi böreği, zeytin, salam, sosis (4 adet), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 4 adet çay</div></div><div class="price">950,00 ₺</div></div><div class="item"><div><div class="name">3 Kişilik Kahvaltı</div><div class="desc">Beyaz peynir, taze kaşar, tel peynir, örgü peynir, ev yapımı tepsi böreği, zeytin, salam, sosis (6 adet), patates kızartması, sigara böreği, haşlanmış yumurta, ev yapımı tepsi böreği, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 6 adet çay</div></div><div class="price">1.425,00 ₺</div></div><div class="item"><div><div class="name">Express Kahvaltı</div><div class="desc">Beyaz peynir, taze kaşar, zeytin, sigara böreği, patates kızartması, reçel, domates, salatalık + 1 adet çay</div></div><div class="price">350,00 ₺</div></div><div class="item"><div><div class="name">Sporcu Kahvaltısı</div><div class="desc">Beyaz peynir, tel peynir, örgü peynir, 3 adet haşlanmış yumurta, zeytin, tahin-pekmez, domates, salatalık, biber, roka, maydanoz + 2 adet çay veya 1 adet sade kahve</div></div><div class="price">450,00 ₺</div></div></section><section id="kahvaltiliklar"><h2><span>🥗</span>Kahvaltılıklar</h2><div class="item"><div><div class="name">Söğüş Tabağı</div><div class="desc">Domates, salatalık, biber</div></div><div class="price">220,00 ₺</div></div><div class="item"><div><div class="name">Full Söğüş Tabağı</div><div class="desc">Domates, salatalık, biber, beyaz peynir, zeytin</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Peynir Tabağı</div><div class="desc">Beyaz peynir, kaşar, tel peynir, örgü peynir</div></div><div class="price">340,00 ₺</div></div><div class="item"><div><div class="name">Aperatif Sepeti</div><div class="desc">Elma dilim patates, parmak patates, sosis, sigara böreği</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Patates Kızartması</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Elma Dilim Patates</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Sosis Kızartması</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuk Tava</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Soslu Sosis</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Haşlanmış Yumurta</div></div><div class="price">25,00 ₺</div></div><div class="item"><div><div class="name">Tahin Pekmez</div></div><div class="price">190,00 ₺</div></div><div class="item"><div><div class="name">Bal Kaymak</div></div><div class="price">230,00 ₺</div></div><div class="item"><div><div class="name">Yarım Bal Kaymak</div></div><div class="price">190,00 ₺</div></div><div class="item"><div><div class="name">Sosluklar</div><div class="desc">Bal, acı ezme, zeytin, tereyağ, kaymak, kakaolu fındık kreması</div></div><div class="price">50,00 ₺</div></div><div class="item"><div><div class="name">Peynir Çeşitleri</div><div class="desc">Beyaz peynir, kaşar, tel peynir, örgü peynir (seçeceğiniz tek bir çeşit porsiyon olarak servis edilir)</div></div><div class="price">150,00 ₺</div></div></section><section id="gozleme"><h2><span>🥞</span>Gözleme</h2><div class="item"><div><div class="name">Ispanaklı Gözleme</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Ispanaklı, Beyaz Peynirli Gözleme</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Ispanaklı, Kaşarlı Gözleme</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Gözleme</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli Gözleme</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu Gözleme</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Kaşarlı Gözleme</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Gözleme</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Kaşarlı Gözleme</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Beyaz Peynirli Gözleme</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı Gözleme</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Kaşarlı Gözleme</div></div><div class="price">380,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Beyaz Peynirli Gözleme</div></div><div class="price">380,00 ₺</div></div></section><section id="borek"><h2><span>🥐</span>Börek &amp; Pişi</h2><div class="item"><div><div class="name">Sade Pişi (3 adet)</div></div><div class="price">210,00 ₺</div></div><div class="item"><div><div class="name">Sade Pişi (1 adet)</div></div><div class="price">70,00 ₺</div></div><div class="item"><div><div class="name">Fındık Kremalı Pişi (3 adet)</div></div><div class="price">240,00 ₺</div></div><div class="item"><div><div class="name">Fındık Kremalı Pişi (1 adet)</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Pişi (3 adet)</div></div><div class="price">225,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Pişi (1 adet)</div></div><div class="price">75,00 ₺</div></div><div class="item"><div><div class="name">Lor Peynirli Pişi (3 adet)</div></div><div class="price">225,00 ₺</div></div><div class="item"><div><div class="name">Lor Peynirli Pişi (1 adet)</div></div><div class="price">75,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Pişi (3 adet)</div></div><div class="price">225,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Pişi (1 adet)</div></div><div class="price">75,00 ₺</div></div><div class="item"><div><div class="name">Sigara Böreği (6 adet)</div></div><div class="price">150,00 ₺</div></div><div class="item"><div><div class="name">Ev Böreği (250 gr.)</div></div><div class="price">150,00 ₺</div></div></section><section id="menemen"><h2><span>🍅</span>Menemen</h2><div class="item"><div><div class="name">Sade Menemen</div></div><div class="price">240,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Menemen</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli Menemen</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli, Kaşarlı Menemen</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Menemen</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Kaşarlı Menemen</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Beyaz Peynirli Menemen</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sosisli Menemen</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sosisli, Kaşarlı Menemen</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sosisli Menemen</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Kaşarlı Menemen</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Beyaz Peynirli Menemen</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Jumbo 1.5 Porsiyon Menemen</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Sporcu 1.5 Porsiyon Menemen</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu Menemen</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Kaşarlı Menemen</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Beyaz Peynirli Menemen</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli Menemen</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Kaşarlı Menemen</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Beyaz Peynirli Menemen</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Sosisli Menemen</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Sosisli, Kaşarlı Menemen</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı Menemen</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Kaşarlı Menemen</div></div><div class="price">350,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli Menemen</div></div><div class="price">350,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli, Kaşarlı Menemen</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli, Beyaz Peynirli Menemen</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu Menemen</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Kaşarlı Menemen</div></div><div class="price">340,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Kaşarlı, Patatesli Menemen</div></div><div class="price">350,00 ₺</div></div></section><section id="yumurta"><h2><span>🥚</span>Yumurta</h2><div class="item"><div><div class="name">Sade Yumurta</div></div><div class="price">230,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Yumurta</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli, Kaşarlı Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sosisli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Kaşarlı Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Beyaz Peynirli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Yumurta</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Kaşarlı Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Beyaz Peynirli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sosisli Yumurta</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sosisli, Kaşarlı Yumurta</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu Yumurta</div></div><div class="price">250,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Kaşarlı Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Beyaz Peynirli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli Yumurta</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Kaşarlı Yumurta</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Beyaz Peynirli Yumurta</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Sosisli Yumurta</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Patatesli, Sosisli, Kaşarlı Yumurta</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı Yumurta</div></div><div class="price">310,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Kaşarlı Yumurta</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli Yumurta</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli, Kaşarlı Yumurta</div></div><div class="price">340,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu Yumurta</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Beyaz Peynirli Yumurta</div></div><div class="price">310,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Kaşarlı Yumurta</div></div><div class="price">310,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Patatesli Yumurta</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Patatesli, Kaşarlı Yumurta</div></div><div class="price">320,00 ₺</div></div><div class="item"><div><div class="name">Sporcu Yumurtası 1.5 Porsiyon</div></div><div class="price">340,00 ₺</div></div></section><section id="omlet"><h2><span>🧀</span>Omlet</h2><div class="item"><div><div class="name">Sade Omlet</div></div><div class="price">260,00 ₺</div></div><div class="item"><div><div class="name">Kaşarlı Omlet</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Beyaz Peynirli Omlet</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu Omlet</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Kaşarlı Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sucuklu, Beyaz Peynirli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Patatesli Omlet</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Kaşarlı Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sucuklu Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Sucuklu, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Patatesli, Beyaz Peynirli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sosisli Omlet</div></div><div class="price">280,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Kaşarlı Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Beyaz Peynirli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Patatesli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Patatesli, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Sucuklu Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Sosisli, Sucuklu, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Sebzeli Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı Omlet</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Kaşarlı Omlet</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli Omlet</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kavurmalı, Patatesli, Kaşarlı Omlet</div></div><div class="price">370,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu Omlet</div></div><div class="price">330,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Kaşarlı Omlet</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Beyaz Peynirli Omlet</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Patatesli Omlet</div></div><div class="price">360,00 ₺</div></div><div class="item"><div><div class="name">Kangal Sucuklu, Patatesli, Kaşarlı Omlet</div></div><div class="price">370,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı Omlet</div></div><div class="price">270,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Beyaz Peynirli Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Patatesli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Patatesli, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Sucuklu Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Sucuklu, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Sosisli Omlet</div></div><div class="price">290,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Sosisli, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Mantarlı, Sosisli, Kaşarlı Omlet</div></div><div class="price">300,00 ₺</div></div><div class="item"><div><div class="name">Vejeteryan Omlet</div></div><div class="price">300,00 ₺</div></div></section><section id="soguk"><h2><span>🥤</span>Soğuk İçecekler</h2><div class="item"><div><div class="name">Coca Cola 330 ml</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Coca Cola Zero 330 ml</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Capy (Şeftali, Vişne, Karışık)</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Lipton Ice Tea (Şeftali, Limon)</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Nescafe Express</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Süt</div></div><div class="price">60,00 ₺</div></div><div class="item"><div><div class="name">Ballı Süt</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Soda</div></div><div class="price">40,00 ₺</div></div><div class="item"><div><div class="name">Limonlu Soda</div></div><div class="price">50,00 ₺</div></div><div class="item"><div><div class="name">Ayran</div></div><div class="price">60,00 ₺</div></div><div class="item"><div><div class="name">Taze Sıkma Portakal Suyu 200 ml</div></div><div class="price">100,00 ₺</div></div><div class="item"><div><div class="name">Taze Sıkma Portakal Suyu 330 ml</div></div><div class="price">140,00 ₺</div></div><div class="item"><div><div class="name">Su</div></div><div class="price">30,00 ₺</div></div></section><section id="mini_sicak"><h2><span>☕</span>Sıcak İçecekler</h2><div class="item"><div><div class="name">Çay Bardak</div></div><div class="price">30,00 ₺</div></div><div class="item"><div><div class="name">Çay Fincan</div></div><div class="price">40,00 ₺</div></div><div class="item"><div><div class="name">Americano</div></div><div class="price">80,00 ₺</div></div><div class="item"><div><div class="name">Espresso</div></div><div class="price">75,00 ₺</div></div><div class="item"><div><div class="name">Süt</div></div><div class="price">60,00 ₺</div></div><div class="item"><div><div class="name">Ballı Süt</div></div><div class="price">80,00 ₺</div></div></section>
-<footer>Fiyatlarımız 21.01.2026 tarihinde güncellenmiştir. Fiyatlarımıza KDV dahildir.</footer>
-</div>
+<body class="menu-page">
+  <main class="menu-shell">
+    <header class="menu-header">
+      <h1>SAHANDA KAHVALTI</h1>
+      <div class="header-line" aria-hidden="true"><i></i><b>2012</b><i></i></div>
+    </header>
+    <nav class="category-nav" id="category-nav" aria-label="Menü kategorileri"></nav>
+    <div id="menu-content"></div>
+    <footer id="menu-footer"></footer>
+  </main>
+  <script>window.DEFAULT_MENU = {
+  "brand": "SAHANDA KAHVALTI",
+  "year": "2012",
+  "updatedAt": "21.01.2026",
+  "taxNote": "Fiyatlarımıza KDV dahildir.",
+  "categories": [
+    {
+      "id": "kahvalti",
+      "title": "Kahvaltı",
+      "icon": "🍳",
+      "items": [
+        {
+          "name": "Kahvaltı Tabağı",
+          "description": "Beyaz peynir, taze kaşar, tel peynir, zeytin, salam, sosis (2 adet), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 2 adet çay",
+          "price": 500
+        },
+        {
+          "name": "2 Kişilik Kahvaltı",
+          "description": "Beyaz peynir, taze kaşar, tel peynir, örgü peynir, ev yapımı tepsi böreği, zeytin, salam, sosis (4 adet), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 4 adet çay",
+          "price": 950
+        },
+        {
+          "name": "3 Kişilik Kahvaltı",
+          "description": "Beyaz peynir, taze kaşar, tel peynir, örgü peynir, ev yapımı tepsi böreği, zeytin, salam, sosis (6 adet), patates kızartması, sigara böreği, haşlanmış yumurta, ev yapımı tepsi böreği, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 6 adet çay",
+          "price": 1425
+        },
+        {
+          "name": "Express Kahvaltı",
+          "description": "Beyaz peynir, taze kaşar, zeytin, sigara böreği, patates kızartması, reçel, domates, salatalık + 1 adet çay",
+          "price": 350
+        },
+        {
+          "name": "Sporcu Kahvaltısı",
+          "description": "Beyaz peynir, tel peynir, örgü peynir, 3 adet haşlanmış yumurta, zeytin, tahin-pekmez, domates, salatalık, biber, roka, maydanoz + 2 adet çay veya 1 adet sade kahve",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "kahvaltiliklar",
+      "title": "Kahvaltılıklar",
+      "icon": "🥗",
+      "items": [
+        {
+          "name": "Söğüş Tabağı",
+          "description": "Domates, salatalık, biber",
+          "price": 220
+        },
+        {
+          "name": "Full Söğüş Tabağı",
+          "description": "Domates, salatalık, biber, beyaz peynir, zeytin",
+          "price": 260
+        },
+        {
+          "name": "Peynir Tabağı",
+          "description": "Beyaz peynir, kaşar, tel peynir, örgü peynir",
+          "price": 340
+        },
+        {
+          "name": "Aperatif Sepeti",
+          "description": "Elma dilim patates, parmak patates, sosis, sigara böreği",
+          "price": 290
+        },
+        {
+          "name": "Patates Kızartması",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Elma Dilim Patates",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Sosis Kızartması",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Kangal Sucuk Tava",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Soslu Sosis",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Haşlanmış Yumurta",
+          "description": "",
+          "price": 25
+        },
+        {
+          "name": "Tahin Pekmez",
+          "description": "",
+          "price": 190
+        },
+        {
+          "name": "Bal Kaymak",
+          "description": "",
+          "price": 230
+        },
+        {
+          "name": "Yarım Bal Kaymak",
+          "description": "",
+          "price": 190
+        },
+        {
+          "name": "Sosluklar",
+          "description": "Bal, acı ezme, zeytin, tereyağ, kaymak, kakaolu fındık kreması",
+          "price": 50
+        },
+        {
+          "name": "Peynir Çeşitleri",
+          "description": "Beyaz peynir, kaşar, tel peynir, örgü peynir (seçeceğiniz tek bir çeşit porsiyon olarak servis edilir)",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "gozleme",
+      "title": "Gözleme",
+      "icon": "🥞",
+      "items": [
+        {
+          "name": "Ispanaklı Gözleme",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Ispanaklı, Beyaz Peynirli Gözleme",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Ispanaklı, Kaşarlı Gözleme",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Kaşarlı Gözleme",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Beyaz Peynirli Gözleme",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu Gözleme",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu, Kaşarlı Gözleme",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Patatesli Gözleme",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli, Kaşarlı Gözleme",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Patatesli, Beyaz Peynirli Gözleme",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Kavurmalı Gözleme",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kavurmalı, Kaşarlı Gözleme",
+          "description": "",
+          "price": 380
+        },
+        {
+          "name": "Kavurmalı, Beyaz Peynirli Gözleme",
+          "description": "",
+          "price": 380
+        }
+      ]
+    },
+    {
+      "id": "borek",
+      "title": "Börek & Pişi",
+      "icon": "🥐",
+      "items": [
+        {
+          "name": "Sade Pişi (3 adet)",
+          "description": "",
+          "price": 210
+        },
+        {
+          "name": "Sade Pişi (1 adet)",
+          "description": "",
+          "price": 70
+        },
+        {
+          "name": "Fındık Kremalı Pişi (3 adet)",
+          "description": "",
+          "price": 240
+        },
+        {
+          "name": "Fındık Kremalı Pişi (1 adet)",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Kaşarlı Pişi (3 adet)",
+          "description": "",
+          "price": 225
+        },
+        {
+          "name": "Kaşarlı Pişi (1 adet)",
+          "description": "",
+          "price": 75
+        },
+        {
+          "name": "Lor Peynirli Pişi (3 adet)",
+          "description": "",
+          "price": 225
+        },
+        {
+          "name": "Lor Peynirli Pişi (1 adet)",
+          "description": "",
+          "price": 75
+        },
+        {
+          "name": "Patatesli Pişi (3 adet)",
+          "description": "",
+          "price": 225
+        },
+        {
+          "name": "Patatesli Pişi (1 adet)",
+          "description": "",
+          "price": 75
+        },
+        {
+          "name": "Sigara Böreği (6 adet)",
+          "description": "",
+          "price": 150
+        },
+        {
+          "name": "Ev Böreği (250 gr.)",
+          "description": "",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "menemen",
+      "title": "Menemen",
+      "icon": "🍅",
+      "items": [
+        {
+          "name": "Sade Menemen",
+          "description": "",
+          "price": 240
+        },
+        {
+          "name": "Kaşarlı Menemen",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Beyaz Peynirli, Kaşarlı Menemen",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli Menemen",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Patatesli, Kaşarlı Menemen",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli, Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli, Sosisli Menemen",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli, Sosisli, Kaşarlı Menemen",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sosisli Menemen",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sosisli, Kaşarlı Menemen",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sosisli, Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Jumbo 1.5 Porsiyon Menemen",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Sporcu 1.5 Porsiyon Menemen",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Sucuklu Menemen",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sucuklu, Kaşarlı Menemen",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sucuklu, Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sucuklu, Patatesli Menemen",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sucuklu, Patatesli, Kaşarlı Menemen",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sucuklu, Patatesli, Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sucuklu, Patatesli, Sosisli Menemen",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sucuklu, Patatesli, Sosisli, Kaşarlı Menemen",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Kavurmalı Menemen",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kavurmalı, Kaşarlı Menemen",
+          "description": "",
+          "price": 350
+        },
+        {
+          "name": "Kavurmalı, Patatesli Menemen",
+          "description": "",
+          "price": 350
+        },
+        {
+          "name": "Kavurmalı, Patatesli, Kaşarlı Menemen",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kavurmalı, Patatesli, Beyaz Peynirli Menemen",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kangal Sucuklu Menemen",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kangal Sucuklu, Kaşarlı Menemen",
+          "description": "",
+          "price": 340
+        },
+        {
+          "name": "Kangal Sucuklu, Kaşarlı, Patatesli Menemen",
+          "description": "",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "yumurta",
+      "title": "Yumurta",
+      "icon": "🥚",
+      "items": [
+        {
+          "name": "Sade Yumurta",
+          "description": "",
+          "price": 230
+        },
+        {
+          "name": "Kaşarlı Yumurta",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Beyaz Peynirli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sosisli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sosisli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sosisli, Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Patatesli Yumurta",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Patatesli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Patatesli, Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Patatesli, Sosisli Yumurta",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Patatesli, Sosisli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu Yumurta",
+          "description": "",
+          "price": 250
+        },
+        {
+          "name": "Sucuklu, Kaşarlı Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sucuklu, Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sucuklu, Patatesli Yumurta",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Sucuklu, Patatesli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu, Patatesli, Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu, Patatesli, Sosisli Yumurta",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Sucuklu, Patatesli, Sosisli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Kavurmalı Yumurta",
+          "description": "",
+          "price": 310
+        },
+        {
+          "name": "Kavurmalı, Kaşarlı Yumurta",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kavurmalı, Patatesli Yumurta",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kavurmalı, Patatesli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 340
+        },
+        {
+          "name": "Kangal Sucuklu Yumurta",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Kangal Sucuklu, Beyaz Peynirli Yumurta",
+          "description": "",
+          "price": 310
+        },
+        {
+          "name": "Kangal Sucuklu, Kaşarlı Yumurta",
+          "description": "",
+          "price": 310
+        },
+        {
+          "name": "Kangal Sucuklu, Patatesli Yumurta",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kangal Sucuklu, Patatesli, Kaşarlı Yumurta",
+          "description": "",
+          "price": 320
+        },
+        {
+          "name": "Sporcu Yumurtası 1.5 Porsiyon",
+          "description": "",
+          "price": 340
+        }
+      ]
+    },
+    {
+      "id": "omlet",
+      "title": "Omlet",
+      "icon": "🧀",
+      "items": [
+        {
+          "name": "Sade Omlet",
+          "description": "",
+          "price": 260
+        },
+        {
+          "name": "Kaşarlı Omlet",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sucuklu Omlet",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sucuklu, Kaşarlı Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sucuklu, Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Patatesli Omlet",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Patatesli, Kaşarlı Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Patatesli, Sucuklu Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Patatesli, Sucuklu, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Patatesli, Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sosisli Omlet",
+          "description": "",
+          "price": 280
+        },
+        {
+          "name": "Sosisli, Kaşarlı Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sosisli, Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sosisli, Patatesli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Sosisli, Patatesli, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Sosisli, Sucuklu Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Sosisli, Sucuklu, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Sebzeli Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Kavurmalı Omlet",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kavurmalı, Kaşarlı Omlet",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kavurmalı, Patatesli Omlet",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kavurmalı, Patatesli, Kaşarlı Omlet",
+          "description": "",
+          "price": 370
+        },
+        {
+          "name": "Kangal Sucuklu Omlet",
+          "description": "",
+          "price": 330
+        },
+        {
+          "name": "Kangal Sucuklu, Kaşarlı Omlet",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kangal Sucuklu, Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kangal Sucuklu, Patatesli Omlet",
+          "description": "",
+          "price": 360
+        },
+        {
+          "name": "Kangal Sucuklu, Patatesli, Kaşarlı Omlet",
+          "description": "",
+          "price": 370
+        },
+        {
+          "name": "Mantarlı Omlet",
+          "description": "",
+          "price": 270
+        },
+        {
+          "name": "Mantarlı, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Mantarlı, Beyaz Peynirli Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Mantarlı, Patatesli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Mantarlı, Patatesli, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Mantarlı, Sucuklu Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Mantarlı, Sucuklu, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Mantarlı, Sosisli Omlet",
+          "description": "",
+          "price": 290
+        },
+        {
+          "name": "Mantarlı, Sosisli, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Mantarlı, Sosisli, Kaşarlı Omlet",
+          "description": "",
+          "price": 300
+        },
+        {
+          "name": "Vejeteryan Omlet",
+          "description": "",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "soguk",
+      "title": "Soğuk İçecekler",
+      "icon": "🥤",
+      "items": [
+        {
+          "name": "Coca Cola 330 ml",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Coca Cola Zero 330 ml",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Capy (Şeftali, Vişne, Karışık)",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Lipton Ice Tea (Şeftali, Limon)",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Nescafe Express",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Süt",
+          "description": "",
+          "price": 60
+        },
+        {
+          "name": "Ballı Süt",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Soda",
+          "description": "",
+          "price": 40
+        },
+        {
+          "name": "Limonlu Soda",
+          "description": "",
+          "price": 50
+        },
+        {
+          "name": "Ayran",
+          "description": "",
+          "price": 60
+        },
+        {
+          "name": "Taze Sıkma Portakal Suyu 200 ml",
+          "description": "",
+          "price": 100
+        },
+        {
+          "name": "Taze Sıkma Portakal Suyu 330 ml",
+          "description": "",
+          "price": 140
+        },
+        {
+          "name": "Su",
+          "description": "",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "mini_sicak",
+      "title": "Sıcak İçecekler",
+      "icon": "☕",
+      "items": [
+        {
+          "name": "Çay Bardak",
+          "description": "",
+          "price": 30
+        },
+        {
+          "name": "Çay Fincan",
+          "description": "",
+          "price": 40
+        },
+        {
+          "name": "Americano",
+          "description": "",
+          "price": 80
+        },
+        {
+          "name": "Espresso",
+          "description": "",
+          "price": 75
+        },
+        {
+          "name": "Süt",
+          "description": "",
+          "price": 60
+        },
+        {
+          "name": "Ballı Süt",
+          "description": "",
+          "price": 80
+        }
+      ]
+    }
+  ]
+};
+</script><script>document.body.classList.toggle("admin-mode",new URLSearchParams(location.search).has("yonetim"));</script><script>(() => {
+  const storageKey = 'sahanda-menu-preview';
+  const data = JSON.parse(localStorage.getItem(storageKey) || JSON.stringify(window.DEFAULT_MENU));
+  const esc = value => String(value || '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const money = price => new Intl.NumberFormat('tr-TR', {minimumFractionDigits: 0, maximumFractionDigits: 2}).format(Number(price || 0)) + ' ₺';
+  document.title = `${data.brand} ${data.year} | Menü`;
+  document.querySelector('h1').textContent = data.brand;
+  document.querySelector('.header-line b').textContent = data.year;
+  document.querySelector('#category-nav').innerHTML = data.categories.map(category => `<a href="#${esc(category.id)}">${esc(category.icon)} ${esc(category.title)}</a>`).join('');
+  document.querySelector('#menu-content').innerHTML = data.categories.map(category => `
+    <section id="${esc(category.id)}" class="menu-category">
+      <div class="category-heading"><span class="leaf leaf-left">❧</span><h2>${esc(category.icon)} ${esc(category.title)}</h2><span class="leaf leaf-right">❧</span></div>
+      <div class="items">${category.items.map(item => `<article class="menu-item"><div><h3>${esc(item.name)}</h3>${item.description ? `<p>${esc(item.description)}</p>` : ''}</div><strong>${money(item.price)}</strong></article>`).join('')}</div>
+    </section>`).join('');
+  document.querySelector('#menu-footer').innerHTML = `<p>ⓘ &nbsp;${esc(data.taxNote)}</p><p>▣ &nbsp;Fiyatlarımız <b>${esc(data.updatedAt)}</b> tarihinde güncellenmiştir.</p><em>❧ &nbsp; Afiyet Olsun &nbsp; ❧</em>`;
+})();
+</script><script>(() => {
+  const key = 'sahanda-menu-preview';
+  let menu = JSON.parse(localStorage.getItem(key) || JSON.stringify(window.DEFAULT_MENU));
+  const $ = selector => document.querySelector(selector);
+  const categories = $('#categories');
+  const makeId = title => `${title.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9ğüşıöç]+/g, '-').replace(/(^-|-$)/g, '')}-${Date.now().toString().slice(-5)}`;
+  const save = () => { localStorage.setItem(key, JSON.stringify(menu)); };
+  const bindGeneral = () => ['brand','year','updatedAt','taxNote'].forEach(field => { $(`#${field}`).value = menu[field] || ''; $(`#${field}`).oninput = event => { menu[field] = event.target.value; save(); }; });
+  const draw = () => {
+    categories.innerHTML = '';
+    menu.categories.forEach((category, ci) => {
+      const card = document.createElement('section'); card.className = 'category-card';
+      card.innerHTML = `<div class="category-top"><label class="icon">Simge<input class="category-icon" value="${category.icon || ''}"></label><label>Kategori adı<input class="category-title" value="${category.title}"></label></div><div class="category-actions"><button class="add-item">+ Ürün ekle</button><button class="remove-category">Kategoriyi sil</button></div><div class="item-list"></div>`;
+      const list = card.querySelector('.item-list');
+      category.items.forEach((item, ii) => addItemRow(list, item, ci, ii));
+      card.querySelector('.category-icon').oninput = event => { category.icon = event.target.value; save(); };
+      card.querySelector('.category-title').oninput = event => { category.title = event.target.value; save(); };
+      card.querySelector('.add-item').onclick = () => { category.items.push({name:'Yeni ürün',description:'',price:0}); save(); draw(); };
+      card.querySelector('.remove-category').onclick = () => { if (confirm(`“${category.title}” kategorisi silinsin mi?`)) { menu.categories.splice(ci, 1); save(); draw(); } };
+      categories.append(card);
+    });
+  };
+  const addItemRow = (list, item, ci, ii) => {
+    const row = $('#item-template').content.firstElementChild.cloneNode(true);
+    row.querySelector('.item-name').value = item.name || '';
+    row.querySelector('.item-price').value = item.price ?? 0;
+    row.querySelector('.item-description').value = item.description || '';
+    row.querySelector('.item-name').oninput = event => { item.name = event.target.value; save(); };
+    row.querySelector('.item-price').oninput = event => { item.price = Number(event.target.value); save(); };
+    row.querySelector('.item-description').oninput = event => { item.description = event.target.value; save(); };
+    row.querySelector('.remove-item').onclick = () => { if (confirm(`“${item.name}” ürünü silinsin mi?`)) { menu.categories[ci].items.splice(ii, 1); save(); draw(); } };
+    list.append(row);
+  };
+  $('#add-category').onclick = () => { const title = prompt('Yeni kategori adı:'); if (title?.trim()) { menu.categories.push({id:makeId(title),title:title.trim(),icon:'☕',items:[]}); save(); draw(); } };
+  $('#download').onclick = () => { const file = new Blob([`window.DEFAULT_MENU = ${JSON.stringify(menu, null, 2)};\n`], {type:'text/javascript'}); const link = document.createElement('a'); link.href = URL.createObjectURL(file); link.download = 'menu-data.js'; link.click(); URL.revokeObjectURL(link.href); };
+  $('#preview').onclick = () => window.open('index.html', '_blank');
+  $('#reset').onclick = () => { if (confirm('Bu bilgisayardaki tüm yerel düzenlemeler silinsin mi?')) { menu = JSON.parse(JSON.stringify(window.DEFAULT_MENU)); save(); bindGeneral(); draw(); } };
+  bindGeneral(); draw();
+})();
+</script>
+
+  <main class="admin-shell">
+    <header><a href="index.html">← Menüye dön</a><h1>Menü Yönetimi</h1><p>Değişikliklerini burada yap, sonra tek dosya olarak indir.</p></header>
+    <section class="notice"><b>Önemli:</b> Bu ekran değişiklikleri yalnızca bu bilgisayarda saklar. İşin bittiğinde “Veriyi indir” ile oluşan <code>menu-data.js</code> dosyasını GitHub’daki aynı dosyanın yerine koyarak QR menünü güncellersin.</section>
+    <section class="settings card"><h2>Genel bilgiler</h2><label>Marka adı<input id="brand" type="text"></label><label>Kuruluş yılı<input id="year" type="text"></label><label>Fiyat güncelleme tarihi<input id="updatedAt" type="text" placeholder="gg.aa.yyyy"></label><label>KDV notu<input id="taxNote" type="text"></label></section>
+    <div class="toolbar"><button class="primary" id="add-category">+ Yeni kategori</button><button id="download">↓ Veriyi indir</button><button id="preview">Menüyü önizle ↗</button><button class="danger" id="reset">Baştaki veriye dön</button></div>
+    <div id="categories"></div>
+  </main>
+  <template id="item-template"><article class="item-edit"><div class="fields"><label>Ürün adı<input class="item-name" type="text"></label><label>Fiyat (₺)<input class="item-price" type="number" min="0" step="1"></label><label class="wide">Açıklama (isteğe bağlı)<input class="item-description" type="text"></label></div><button class="remove-item" title="Ürünü sil">Sil</button></article></template>
+  <script src="menu-data.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>

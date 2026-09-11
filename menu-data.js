@@ -11,8 +11,8 @@ window.DEFAULT_MENU = {
       "items": [
         {
           "name": "Kahvaltı Tabağı",
-          "description": "Beyaz peynir, taze kaşar, tel peynir, zeytin, salam, sosis (2 adet), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 2 adet çay",
-          "price": 500
+          "description": "Beyaz peynir, taze kaşar, tel peynir, zeytin, salam, sosis ( 2 adet ), patates kızartması, sigara böreği, haşlanmış yumurta, kakaolu fındık kreması, acı ezme, reçel, tereyağı, bal, kokteyl domates, salatalık, biber + 2 adet çay",
+          "price": 600
         },
         {
           "name": "2 Kişilik Kahvaltı",

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAHANDA KAHVALTI | Menü Yönetimi</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header><a href="index.html">← Menüye dön</a><h1>Menü Yönetimi</h1><p>Değişikliklerini burada yap, sonra güncellenmiş menü dosyasını indir.</p></header>
+    <section class="notice"><b>Nasıl çalışır?</b> Yaptığınız değişiklikler önce bu tarayıcıda saklanır. İşiniz bittiğinde <b>“Veriyi indir”</b> düğmesine basın. İnen <code>menu-data.js</code> dosyasını GitHub'daki aynı dosyanın yerine koyduğunuzda QR menünüz güncellenir.</section>
+    <section class="settings card"><h2>Genel bilgiler</h2><label>Marka adı<input id="brand" type="text"></label><label>Kuruluş yılı<input id="year" type="text"></label><label>Fiyat güncelleme tarihi<input id="updatedAt" type="text" placeholder="gg.aa.yyyy"></label><label>KDV notu<input id="taxNote" type="text"></label></section>
+    <div class="toolbar"><button class="primary" id="add-category">+ Yeni kategori</button><button id="download">↓ Veriyi indir</button><button id="preview">Menüyü önizle ↗</button><button class="danger" id="reset">Baştaki veriye dön</button></div>
+    <div id="categories"></div>
+  </main>
+  <template id="item-template"><article class="item-edit"><div class="fields"><label>Ürün adı<input class="item-name" type="text"></label><label>Fiyat (₺)<input class="item-price" type="number" min="0" step="1"></label><label class="wide">Açıklama (isteğe bağlı)<input class="item-description" type="text"></label></div><button class="remove-item" title="Ürünü sil">Sil</button></article></template>
+  <script src="menu-data.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

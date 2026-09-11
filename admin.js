@@ -34,7 +34,7 @@
     row.querySelector('.remove-item').onclick = () => { if (confirm(`“${item.name}” ürünü silinsin mi?`)) { menu.categories[ci].items.splice(ii, 1); save(); draw(); } };
     list.append(row);
   };
-  $('#add-category').onclick = () => { const title = 'Yeni kategori'; const id = makeId(title); menu.categories.push({id,title,icon:'☕',items:[]}); save(); draw(id); };
+  $('#add-category').onclick = () => { const title = 'Yeni kategori'; const id = makeId(title); menu.categories.unshift({id,title,icon:'☕',items:[]}); save(); draw(id); };
   $('#download').onclick = () => { const file = new Blob([`window.DEFAULT_MENU = ${JSON.stringify(menu, null, 2)};\n`], {type:'text/javascript'}); const link = document.createElement('a'); link.href = URL.createObjectURL(file); link.download = 'menu-data.js'; link.click(); URL.revokeObjectURL(link.href); };
   $('#preview').onclick = () => window.open('index.html', '_blank');
   $('#reset').onclick = () => { if (confirm('Bu bilgisayardaki tüm yerel düzenlemeler silinsin mi?')) { menu = JSON.parse(JSON.stringify(window.DEFAULT_MENU)); save(); bindGeneral(); draw(); } };

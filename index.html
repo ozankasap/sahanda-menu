@@ -22,7 +22,7 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
     <div id="menu-content"></div>
     <footer id="menu-footer"></footer>
   </main>
-  <script src="menu-data.js"></script><script>document.body.classList.toggle("admin-mode",new URLSearchParams(location.search).has("yonetim"));</script><script>(() => {
+  <script src="menu-data.js?v=6bc92165"></script><script>document.body.classList.toggle("admin-mode",new URLSearchParams(location.search).has("yonetim"));</script><script>(() => {
   const storageKey = 'sahanda-menu-preview';
   let data = window.DEFAULT_MENU;
   if (new URLSearchParams(location.search).has('onizleme')) {
@@ -51,7 +51,7 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
     <div id="categories"></div>
   </main>
   <template id="item-template"><article class="item-edit"><div class="fields"><label>Ürün adı<input class="item-name" type="text"></label><label>Fiyat (₺)<input class="item-price" type="number" min="0" step="1"></label><label class="wide">Açıklama (isteğe bağlı)<input class="item-description" type="text"></label></div><button class="remove-item" title="Ürünü sil">Sil</button></article></template>
-  <script src="admin.js"></script>
+  <script src="admin.js?v=712cf476"></script>
 <script>document.querySelectorAll('.menu-header h1,.menu-header .header-line,.category-heading h2').forEach(e=>e.style.setProperty('color','#fff','important'));</script></body>
 </html>
 

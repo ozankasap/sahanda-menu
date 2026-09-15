@@ -1,4 +1,5 @@
 (() => {
+  if (!new URLSearchParams(location.search).has('yonetim') && !location.pathname.endsWith('/admin.html')) return;
   const key = 'sahanda-menu-preview';
   let menu = JSON.parse(localStorage.getItem(key) || JSON.stringify(window.DEFAULT_MENU));
   const $ = selector => document.querySelector(selector);
@@ -36,7 +37,8 @@
   };
   $('#add-category').onclick = () => { const title = 'Yeni kategori'; const id = makeId(title); menu.categories.unshift({id,title,icon:'☕',items:[]}); save(); draw(id); };
   $('#download').onclick = () => { const file = new Blob([`window.DEFAULT_MENU = ${JSON.stringify(menu, null, 2)};\n`], {type:'text/javascript'}); const link = document.createElement('a'); link.href = URL.createObjectURL(file); link.download = 'menu-data.js'; link.click(); URL.revokeObjectURL(link.href); };
-  $('#preview').onclick = () => window.open('index.html', '_blank');
+  $('#preview').onclick = () => window.open('index.html?onizleme', '_blank');
   $('#reset').onclick = () => { if (confirm('Bu bilgisayardaki tüm yerel düzenlemeler silinsin mi?')) { menu = JSON.parse(JSON.stringify(window.DEFAULT_MENU)); save(); bindGeneral(); draw(); } };
   bindGeneral(); draw();
 })();
+

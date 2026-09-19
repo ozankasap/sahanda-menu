@@ -43,7 +43,7 @@ window.DEFAULT_MENU = {
       "items": [
         {
           "name": "Söğüş Tabağı",
-          "description": "Domates, salatalık, biber",
+          "description": "Domates, salatalık, biber ",
           "price": 240
         },
         {
@@ -642,17 +642,17 @@ window.DEFAULT_MENU = {
         {
           "name": "Ispanaklı Gözleme",
           "description": "",
-          "price": 290
+          "price": 270
         },
         {
           "name": "Ispanaklı, Beyaz Peynirli Gözleme",
           "description": "",
-          "price": 300
+          "price": 280
         },
         {
           "name": "Ispanaklı, Kaşarlı Gözleme",
           "description": "",
-          "price": 300
+          "price": 280
         },
         {
           "name": "Kaşarlı Gözleme",
@@ -677,12 +677,12 @@ window.DEFAULT_MENU = {
         {
           "name": "Patatesli Gözleme",
           "description": "",
-          "price": 290
+          "price": 280
         },
         {
           "name": "Patatesli, Kaşarlı Gözleme",
           "description": "",
-          "price": 300
+          "price": 290
         },
         {
           "name": "Patatesli, Beyaz Peynirli Gözleme",
@@ -697,12 +697,12 @@ window.DEFAULT_MENU = {
         {
           "name": "Kavurmalı, Kaşarlı Gözleme",
           "description": "",
-          "price": 440
+          "price": 430
         },
         {
           "name": "Kavurmalı, Beyaz Peynirli Gözleme",
           "description": "",
-          "price": 440
+          "price": 430
         }
       ]
     },
@@ -714,62 +714,62 @@ window.DEFAULT_MENU = {
         {
           "name": "Sade Pişi (3 adet)",
           "description": "",
-          "price": 210
+          "price": 240
         },
         {
           "name": "Sade Pişi (1 adet)",
           "description": "",
-          "price": 70
+          "price": 80
         },
         {
           "name": "Fındık Kremalı Pişi (3 adet)",
           "description": "",
-          "price": 240
+          "price": 270
         },
         {
           "name": "Fındık Kremalı Pişi (1 adet)",
           "description": "",
-          "price": 80
+          "price": 90
         },
         {
           "name": "Kaşarlı Pişi (3 adet)",
           "description": "",
-          "price": 225
+          "price": 255
         },
         {
           "name": "Kaşarlı Pişi (1 adet)",
           "description": "",
-          "price": 75
+          "price": 85
         },
         {
           "name": "Lor Peynirli Pişi (3 adet)",
           "description": "",
-          "price": 225
+          "price": 240
         },
         {
           "name": "Lor Peynirli Pişi (1 adet)",
           "description": "",
-          "price": 75
+          "price": 80
         },
         {
           "name": "Patatesli Pişi (3 adet)",
           "description": "",
-          "price": 225
+          "price": 255
         },
         {
           "name": "Patatesli Pişi (1 adet)",
           "description": "",
-          "price": 75
+          "price": 85
         },
         {
           "name": "Sigara Böreği (6 adet)",
           "description": "",
-          "price": 150
+          "price": 180
         },
         {
           "name": "Ev Böreği (250 gr.)",
           "description": "",
-          "price": 150
+          "price": 180
         }
       ]
     },
@@ -831,12 +831,12 @@ window.DEFAULT_MENU = {
         {
           "name": "Taze Sıkma Portakal Suyu 200 ml",
           "description": "",
-          "price": 100
+          "price": 120
         },
         {
           "name": "Taze Sıkma Portakal Suyu 330 ml",
           "description": "",
-          "price": 140
+          "price": 150
         },
         {
           "name": "Su",

@@ -27,6 +27,23 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
 @media(max-width:480px){.menu-header{padding-bottom:10px}.menu-header h1{font-size:clamp(24px,7.4vw,30px)}.language-row{margin-top:8px}.category-nav a{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style>
+/* Weekday offer: visible before category navigation. */
+.promo-banner{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;margin:16px 0 0;padding:18px;border:1px solid #e8be6c;border-radius:18px;background:linear-gradient(120deg,#921c20,#bb2928);color:#fff9e9;box-shadow:0 7px 20px #8e201c22}
+.promo-banner:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(110deg,transparent 25%,#ffffff20 45%,transparent 65%);transform:translateX(-110%);animation:promo-shine 2.4s ease-out 2}
+.promo-eyebrow{margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#ffe1a0}
+.promo-time{margin:0;padding:11px 8px;border-top:1px solid #ffe1a066;border-bottom:1px solid #ffe1a066;color:#ffe1a0;text-align:center;font-size:clamp(25px,7.3vw,38px);font-weight:900;letter-spacing:-1px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.promo-copy{grid-column:1/-1;text-align:center}.promo-banner{text-align:center}.promo-banner h2{margin:0;color:#fff9e9;font:700 clamp(22px,6.4vw,32px)/1.2 Georgia,serif;text-wrap:balance}
+.promo-discount{display:grid;justify-items:center;align-content:center;width:100px;height:100px;border-radius:18px;background:#ffe1a0;color:#821c20;box-shadow:0 0 0 5px #ffe1a01a;transform:none}
+.promo-note{grid-column:1/-1;margin:0;padding-top:10px;border-top:1px solid #ffe1a044;color:#fff4dd;font-size:12px;line-height:1.5;text-align:center}
+.promo-discount strong{font:900 43px/1 Arial,sans-serif;letter-spacing:-2px}
+.promo-discount span{margin-top:5px;font-size:12px;font-weight:900;letter-spacing:1px}
+.instagram-panel{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0 7px;padding:7px 2px 0}
+.instagram-panel p{font-size:11px}.instagram-panel a{font-size:12px}
+@keyframes promo-shine{to{transform:translateX(110%)}}
+@media(max-width:360px){.promo-banner{padding:15px 12px;gap:8px}.promo-discount{width:78px;height:86px}.promo-discount strong{font-size:36px}.promo-eyebrow{letter-spacing:1px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.promo-banner:before{animation:none}}
+</style>
 </head>
 <style>.menu-page .menu-header,.menu-page .menu-header h1,.menu-page .menu-header .header-line,.menu-page .category-heading h2{color:#fff!important}.menu-page .menu-header h1{font-family:Georgia,serif!important;text-shadow:0 2px 3px #0008!important}.menu-page .category-heading h2{font-family:Georgia,serif!important}.menu-page .category-heading{color:#fff!important}</style>
 <style>.menu-page{background:#f6efe4 url('botanical-frame.svg') center top/650px auto repeat-y!important}.menu-shell{background:#f6efe4e8!important}.menu-header{background:#153f2d url('botanical-frame.png') center 13%/cover no-repeat!important}.menu-header:after{background:#123d2b70!important}</style><body class="menu-page">
@@ -36,13 +53,22 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
       <div class="header-line" aria-hidden="true"><i></i><b>2012</b><i></i></div>
       <div class="language-row"><button class="language-toggle" id="language-toggle" type="button" lang="en">English Menu</button></div>
     </header>
+    <aside class="promo-banner" aria-labelledby="promo-title">
+      <div class="promo-copy">
+        <p class="promo-eyebrow" id="promo-eyebrow">Hafta içi kampanyası</p>
+        <h2 id="promo-title">Gözleme ve Pişi Tabakları</h2>
+      </div>
+      <p class="promo-time">13:30 / 16:00</p>
+      <div class="promo-discount"><strong id="promo-percent">%50</strong><span id="promo-label">İNDİRİMLİ</span></div>
+      <p class="promo-note" id="promo-note">* kavurmalı ve kangal sucuklu ürünler kampanyaya dahil değildir.</p>
+    </aside>
     <aside class="instagram-panel"><p id="instagram-callout">Bizi Instagram’dan takip edin</p><a href="https://www.instagram.com/sahandakahvalti/" target="_blank" rel="noopener noreferrer">@sahandakahvalti</a></aside>
     <nav class="category-nav" id="category-nav" aria-label="Menü kategorileri"></nav>
     <div id="menu-content"></div>
     <footer id="menu-footer"></footer>
   </main>
   <script src="menu-data.js?v=6b6350dd"></script><script>document.body.classList.toggle("admin-mode",new URLSearchParams(location.search).has("yonetim"));</script><script src="menu-en.js?v=20260929"></script>
-  <script src="menu.js?v=20260929"></script>
+  <script src="menu.js?v=20261020"></script>
 
   <main class="admin-shell">
     <header><a href="index.html">← Menüye dön</a><h1>Menü Yönetimi</h1><p>Değişikliklerini burada yap, sonra tek dosya olarak indir.</p></header>

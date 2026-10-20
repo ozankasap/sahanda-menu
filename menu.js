@@ -56,6 +56,11 @@
     toggle.textContent = english ? 'Türkçe Menü' : 'English Menu';
     toggle.lang = english ? 'tr' : 'en';
     document.querySelector('#instagram-callout').textContent = english ? 'Follow us on Instagram' : 'Bizi Instagram’dan takip edin';
+    document.querySelector('#promo-eyebrow').textContent = english ? 'Weekday special' : 'Hafta içi kampanyası';
+    document.querySelector('#promo-title').textContent = english ? 'Gözleme & Pişi Plates' : 'Gözleme ve Pişi Tabakları';
+    document.querySelector('#promo-note').textContent = english ? '* products with kavurma or kangal sucuk are excluded from this offer.' : '* kavurmalı ve kangal sucuklu ürünler kampanyaya dahil değildir.';
+    document.querySelector('#promo-percent').textContent = english ? '50%' : '%50';
+    document.querySelector('#promo-label').textContent = english ? 'OFF' : 'İNDİRİMLİ';
     nav.setAttribute('aria-label', english ? 'Menu categories' : 'Menü kategorileri');
     nav.innerHTML = data.categories.map(category => '<a data-category="' + esc(category.id) + '" href="#' + esc(category.id) + '">' + esc(category.icon) + ' ' + esc(translate(category.title)) + '</a>').join('');
     document.querySelector('#menu-content').innerHTML = data.categories.map(category =>

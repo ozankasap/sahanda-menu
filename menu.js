@@ -17,7 +17,7 @@
     const entry = window.MENU_CALORIES?.[category.id]?.[item.name];
     if (!entry || !Number.isFinite(entry.kcal)) return '';
     const value = new Intl.NumberFormat(language === 'en' ? 'en-GB' : 'tr-TR').format(entry.kcal);
-    const label = (language === 'en' ? 'Approx. ' : 'Yaklaşık ') + value + ' kcal' + (entry.total ? (language === 'en' ? ' · total' : ' · toplam') : '');
+    const label = (language === 'en' ? 'Approx. ' : 'Yaklaşık ') + value + ' kcal';
     return ' <span class="item-calories">' + '(' + esc(label) + ')' + '</span>';
   };
   let sections = [];

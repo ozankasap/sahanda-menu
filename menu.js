@@ -13,6 +13,13 @@
   const translate = value => language === 'en' ? (window.MENU_EN?.[value] ?? value) : value;
   // Always format the original price identically in both languages.
   const money = price => new Intl.NumberFormat('tr-TR', {minimumFractionDigits: 0, maximumFractionDigits: 2}).format(Number(price || 0)) + ' ₺';
+  const calories = (category, item) => {
+    const entry = window.MENU_CALORIES?.[category.id]?.[item.name];
+    if (!entry || !Number.isFinite(entry.kcal)) return '';
+    const value = new Intl.NumberFormat(language === 'en' ? 'en-GB' : 'tr-TR').format(entry.kcal);
+    const label = (language === 'en' ? 'Approx. ' : 'Yaklaşık ') + value + ' kcal' + (entry.total ? (language === 'en' ? ' · total' : ' · toplam') : '');
+    return ' <span class="item-calories">' + '(' + esc(label) + ')' + '</span>';
+  };
   let sections = [];
   let activeId;
   let frame;
@@ -65,9 +72,10 @@
     nav.innerHTML = data.categories.map(category => '<a data-category="' + esc(category.id) + '" href="#' + esc(category.id) + '">' + esc(category.icon) + ' ' + esc(translate(category.title)) + '</a>').join('');
     document.querySelector('#menu-content').innerHTML = data.categories.map(category =>
       '<section id="' + esc(category.id) + '" class="menu-category"><div class="category-heading"><h2>' + esc(category.icon) + ' ' + esc(translate(category.title)) + '</h2></div><div class="items">' +
-      category.items.map(item => '<article class="menu-item"><div><h3>' + esc(translate(item.name)) + '</h3>' + (item.description ? '<p>' + esc(translate(item.description)) + '</p>' : '') + '</div><strong>' + money(item.price) + '</strong></article>').join('') + '</div></section>'
+      category.items.map(item => '<article class="menu-item"><div><h3>' + esc(translate(item.name)) + calories(category, item) + '</h3>' + (item.description ? '<p>' + esc(translate(item.description)) + '</p>' : '') + '</div><strong>' + money(item.price) + '</strong></article>').join('') + '</div></section>'
     ).join('');
     document.querySelector('#menu-footer').innerHTML = '<p>ⓘ &nbsp;' + esc(translate(data.taxNote)) + '</p><p>▣ &nbsp;' + (english ? 'Prices updated on <b>' + esc(data.updatedAt) + '</b>.' : 'Fiyatlarımız <b>' + esc(data.updatedAt) + '</b> tarihinde güncellenmiştir.') + '</p><em>❧ &nbsp; ' + (english ? 'Enjoy your meal' : 'Afiyet Olsun') + ' &nbsp; ❧</em>';
+    document.querySelector('#menu-footer').insertAdjacentHTML('afterbegin', '<p class="calorie-note">' + (english ? 'Calories are approximate recipe estimates, excluding served bread. Values are per ordered item; multi-person breakfasts show the total platter calories. Values may vary with ingredients and preparation.' : 'Kalori değerleri reçeteye göre yaklaşık hesaplanmıştır ve servis ekmeği hariçtir. Değerler sipariş edilen porsiyon içindir; çok kişilik kahvaltılarda tabak toplamı gösterilir. Malzeme ve hazırlamaya göre değişebilir.') + '</p>');
     sections = Array.from(document.querySelectorAll('.menu-category'));
     activeId = undefined;
     updateActive();
@@ -97,3 +105,4 @@
   }).observe(nav);
   render();
 })();
+

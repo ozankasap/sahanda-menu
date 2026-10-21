@@ -44,6 +44,10 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
 @media(max-width:360px){.promo-banner{padding:15px 12px;gap:8px}.promo-discount{width:78px;height:86px}.promo-discount strong{font-size:36px}.promo-eyebrow{letter-spacing:1px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.promo-banner:before{animation:none}}
 </style>
+<style>
+.item-calories{display:inline-block;font-family:Arial,sans-serif;font-size:13px;font-weight:500;line-height:1.5;color:#52584c;vertical-align:baseline;margin-left:4px}
+#menu-footer .calorie-note{grid-column:1/-1;border:0;padding:12px 8px;font-size:11px;line-height:1.5}
+</style>
 </head>
 <style>.menu-page .menu-header,.menu-page .menu-header h1,.menu-page .menu-header .header-line,.menu-page .category-heading h2{color:#fff!important}.menu-page .menu-header h1{font-family:Georgia,serif!important;text-shadow:0 2px 3px #0008!important}.menu-page .category-heading h2{font-family:Georgia,serif!important}.menu-page .category-heading{color:#fff!important}</style>
 <style>.menu-page{background:#f6efe4 url('botanical-frame.svg') center top/650px auto repeat-y!important}.menu-shell{background:#f6efe4e8!important}.menu-header{background:#153f2d url('botanical-frame.png') center 13%/cover no-repeat!important}.menu-header:after{background:#123d2b70!important}</style><body class="menu-page">
@@ -68,7 +72,8 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
     <footer id="menu-footer"></footer>
   </main>
   <script src="menu-data.js?v=6b6350dd"></script><script>document.body.classList.toggle("admin-mode",new URLSearchParams(location.search).has("yonetim"));</script><script src="menu-en.js?v=20260929"></script>
-  <script src="menu.js?v=20261020"></script>
+  <script src="menu-calories.js?v=20261021"></script>
+  <script src="menu.js?v=20261021-calories"></script>
 
   <main class="admin-shell">
     <header><a href="index.html">← Menüye dön</a><h1>Menü Yönetimi</h1><p>Değişikliklerini burada yap, sonra tek dosya olarak indir.</p></header>
@@ -81,3 +86,4 @@ body.admin-mode .menu-shell{display:none}body:not(.admin-mode) .admin-shell{disp
   <script src="admin.js?v=712cf476"></script>
 <script>document.querySelectorAll('.menu-header h1,.menu-header .header-line,.category-heading h2').forEach(e=>e.style.setProperty('color','#fff','important'));</script></body>
 </html>
+
